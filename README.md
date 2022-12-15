@@ -56,13 +56,14 @@ To upload a trained model to RLBot for evaluation:
 Before anything, be sure to install RLBotGUI which can be found from https://rlbot.org/
 
 1. Insert your trained model's <model_name>.zip file into the RLBot Config directory.
-2. Open the agent class in the code and find this line: self.actor = PPO.load(str(_path) + '/exit_save.zip', device='cpu', custom_objects=custom_objects)
-3. Replace exit_save.zip with your <model_name>.zip file.
-4. In the RLBotGUI, delete any bots currently under the blue team and orange team.
-5. Hit the "add" button near the top left to navigate to the RLBot Config directory and upload the bot.cfg file.
-6. A new bot should appear in the list of all other bots, named "Oswald".
-7. Setup the teams as desired and launch Rocket League and start the match.
-8. Make sure that any instances of Rocket League are closed before launching the match, or else you will encounter an error.
+2. Open the agent class in the code and find the variable "model_to_load"
+3. Assign the model_to_load variable to a string that includes the name of the model that comes before the ".zip".
+4. Ensure that the [your_agent].zip file is in the rlbot_config directory. There are examples of models already inside.
+5. In the RLBotGUI, delete any bots currently under the blue team and orange team.
+6. Hit the "add" button near the top left to navigate to the RLBot Config directory and upload the bot.cfg file.
+7. A new bot should appear in the list of all other bots, named "Oswald".
+8. Setup the teams as desired and launch Rocket League and start the match.
+9. Make sure that any instances of Rocket League are closed before launching the match, or else you will encounter an error.
 
 ## Code Architecture
 
