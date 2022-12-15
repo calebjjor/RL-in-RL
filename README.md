@@ -84,7 +84,7 @@ Before anything, be sure to install RLBotGUI which can be found from https://rlb
 The logs directory contains the tensorboard log outputs from training.
 
 ### Models
-The models directory contains sub-directories with different models that were trained on different rewards, hyperparameter configurations, and network architectures.
+The models directory contains sub-directories with different models that were trained on different rewards, hyperparameter configurations, and network architectures. The models directory is not included because there are too many files; however, it will be created automatically when training is ran.
 
 ### RLBot Configurations
 The rlbot_configs directory contains the bot.py and agent.py files that must be reconfigured to upload your own agent into RLBotGUI for evaluation or to play against other bots. It also includes agent.zip files which must be present when adding an agent to be loaded in the agent.py
