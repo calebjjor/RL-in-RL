@@ -46,7 +46,7 @@ Finally RLGym-tools can be pip installed via:
 6. Open the main.py file.
 7. Check the number of instances of Rocket League being run and make sure it isn't too high for your computer to handle.
 8. Ensure that BakkesMod is running with administrative privileges and that the RLGym plugin is turned on within the BakkesMod interface, under the "plugins" tab.
-9. In main "logs," "models," and "mmr_models" folders before starting training (if desired).
+9. Change the variable "model_to_load" to the model you desire to train and the model path in the f string that leads to this model. Otherwise, a new model will be created.
 10. When the in-game timer counts down, the model will begin training.
 
 ### Uploading Model to RLBot for Evaluation
