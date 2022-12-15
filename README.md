@@ -66,7 +66,6 @@ Before anything, be sure to install RLBotGUI which can be found from https://rlb
 
 ## Code Architecture
 
-.
 ├── Logs
 │   └── <subdirectories of tensorboard log outputs>
 ├── Models
@@ -114,7 +113,7 @@ The BallToGoalRewardFunction class calculates the reward for a player based on t
 
 The PlayerVelocityReward class calculates the reward for a player based on the magnitude of the player's velocity. This reward is returned as is, with weighting applied in main.py.
 
-### Main
+## Main
 The main.py file is the entry point for training the agent. It imports and uses classes and functions from the other files in the repository.
 In the main.py file, the user can specify the hyperparameters for training, such as the learning rate, discount factor, and number of training steps. The user can also specify the path for saving logs, the path for saving models, and the network architecture to be used by the actor-critic model.
 
