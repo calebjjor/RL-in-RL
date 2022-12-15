@@ -67,7 +67,7 @@ Before anything, be sure to install RLBotGUI which can be found from https://rlb
 ## Code Architecture
 
 ├── Logs  
-│   └── <subdirectories of tensorboard log outputs> 
+│   └── <subdirectories of tensorboard log outputs>  
 ├── Models  
 │   └── <consists of subdirectories containing trained models with different rewards, hyperparameters, and network architectures>  
 ├── rlbot_configs  
