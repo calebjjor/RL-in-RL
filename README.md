@@ -66,18 +66,18 @@ Before anything, be sure to install RLBotGUI which can be found from https://rlb
 
 ## Code Architecture
 
-├── Logs
-│   └── <subdirectories of tensorboard log outputs>
-├── Models
-│   └── <consists of subdirectories containing trained models with different rewards, hyperparameters, and network architectures>
-├── rlbot_configs
-│   ├── bot.py
-│   └── agent.py
-├── Training
-│   ├── custom_observations.py
-│   ├── custom_rewards.py
-│   └── custom_state_setters.py
-└── main.py
+├── Logs  
+│   └── <subdirectories of tensorboard log outputs>  
+├── Models  
+│   └── <consists of subdirectories containing trained models with different rewards, hyperparameters, and network architectures>  
+├── rlbot_configs  
+│   ├── bot.py  
+│   └── agent.py  
+├── Training  
+│   ├── custom_observations.py  
+│   ├── custom_rewards.py  
+│   └── custom_state_setters.py  
+└── main.py  
 
 ### Logs
 The logs directory contains the tensorboard log outputs from training.
