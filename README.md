@@ -115,11 +115,11 @@ The PlayerVelocityReward class calculates the reward for a player based on the m
 
 ## Main
 The main.py file is the entry point for training the agent. It imports and uses classes and functions from the other files in the repository.
-In the main.py file, the user can specify the hyperparameters for training, such as the learning rate, discount factor, and number of training steps. The user can also specify the path for saving logs, the path for saving models, and the network architecture to be used by the actor-critic model.
+In the main.py file, the user can specify the PPO hyperparameters for training, such as the learning rate, discount factor, and number of training epochs (just to name a few). The user can also specify the path for saving logs, the path for saving models, and the network architecture to be used by the actor-critic model.
 
 The main.py file also imports the custom rewards, custom observations, and custom state-setters from the Training directory. These files define the rewards, observations, and state information that will be used to train the agent.
 
-The main.py file then creates an instance of the tutorial_bot.py file from the Training directory, and passes in the specified hyperparameters, paths, and network architecture. The tutorial_bot.py file is responsible for actually setting up and training the agent using the specified information.
+The main.py file creates the model and passes in the specified hyperparameters, paths, and network architecture.
 
 Once the agent is trained, the user can use the bot.py and agent.py files from the rlbot_configs directory to upload the trained agent to RLBotGUI for evaluation or to play against other bots. The user will need to reconfigure these files to specify the path to the trained model's zip file, as well as any other necessary information.
 
